@@ -20,4 +20,10 @@ public class HelloController {
         return "hello";
     }
 
+    @GetMapping("/hello/zero")
+    public String setZero(){
+        helloCounter.setHelloCountToZero();
+        return "redirect:/hello";
+    }
+
 }

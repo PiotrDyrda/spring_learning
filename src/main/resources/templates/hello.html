@@ -10,7 +10,12 @@
     <input type="text" name="firstName"/>
     <input type="submit" name="Say hello"/>
     <br>
-    <a href="/index"> przejdz do strony glownej. Licznik wejść: <span th:text="${helloCounter}"></span></a>
+    <a href="/index"> przejdz do strony glownej. Licznik wejść:
+        <span th:text="${helloCounter}"></span></a>
+    <br>
+    <input type="submit" name="wyzeruj licznik"/>
+    <br>
+    <a href="/hello/zero"> wyzeruj licznik</a>
 </form>
 </body>
 </html>

@@ -16,4 +16,8 @@ public class HelloCounter {
     public long getCounter(){
         return helloCount++;
     }
+
+    public void setHelloCountToZero (){
+        helloCount=0;
+    }
 }

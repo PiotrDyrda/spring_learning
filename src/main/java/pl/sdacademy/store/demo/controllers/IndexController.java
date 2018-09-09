@@ -4,6 +4,7 @@ package pl.sdacademy.store.demo.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import pl.sdacademy.store.demo.components.IndexCounter;
 
@@ -19,6 +20,12 @@ public class IndexController {
         modelMap.addAttribute("indexCounter", indexCounter.getCounter());
 
         return "index";
+    }
+
+    @GetMapping("/zero")
+    public String setZero(){
+        indexCounter.setIndexCountToZero();
+        return "redirect:/";
     }
 
 

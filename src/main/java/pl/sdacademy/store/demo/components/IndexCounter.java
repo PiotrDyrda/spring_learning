@@ -18,5 +18,9 @@ public class IndexCounter {
     public long getCounter() {
         return indexCount++;
     }
+
+    public void setIndexCountToZero (){
+        indexCount=0;
+    }
 }
 
