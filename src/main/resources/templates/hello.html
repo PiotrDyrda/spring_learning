@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get" action="/hello">
+    <div th:if="${firstName!=null}">Witaj <span th:text="${firstName}"></span></div>
+    <input type="text" name="firstName"/>
+    <input type="submit" name="Say hello"/>
+    <br>
+    <a href="/index"> przejdz do strony glownej. Licznik wejść: <span th:text="${helloCounter}"></span></a>
+</form>
+</body>
+</html>
